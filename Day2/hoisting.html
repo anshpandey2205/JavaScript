@@ -24,7 +24,7 @@
         //     console.log("hello")
         // }
 
-        let arr=[1,2,3,4,5]
+        // let arr=[1,2,3,4,5]
         // console.log(arr.length);
         // arr.push(6)
         // console.log(arr);
@@ -49,9 +49,16 @@
         //     console.log(c,'forEach');
         // })
 
-        arr.map((a,b,c)=>{
-            console.log(a,'map');
-        })
+        // arr.map((a,b,c)=>{
+        //     console.log(a,'map');
+        // })
+
+        arr=[1,2,3,5,53,,3,6,3,345,2]
+        console.log(arr.filter((a)=>a>2)); // value greater than 2
+        console.log(arr.filter((a)=>a%2==0)); // even numbers
+        console.log(arr.reduce((a,b)=>a+b,0)); // sum of all elements
+
+
 
 
 
