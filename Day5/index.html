@@ -16,30 +16,62 @@
         //     console.log("D");
         // }, 1000);
 
-        function step1(){
+        // function step1(){
+        //     setTimeout(() => {
+        //         console.log("Selectedddd");
+                
+        //     }, 5000);
+        // }
+        // function step2(){
+        //     setTimeout(() => {
+        //         console.log("Filter added");
+                
+        //     }, 4000);
+        // }
+        // function step3(){
+        //     setTimeout(() => {
+        //         console.log("Caption added");
+                
+        //     }, 3000);
+        // }
+        // function step4(){
+        //     setTimeout(() => {
+        //         console.log("Post uploaded");
+                
+        //     }, 2000);
+        // }
+
+        function step1(fn){
             setTimeout(() => {
                 console.log("Selectedddd");
-                
+                fn()
             }, 5000);
         }
-        function step2(){
+        function step2(fn){
             setTimeout(() => {
                 console.log("Filter added");
-                
+                fn()
             }, 4000);
         }
-        function step3(){
+        function step3(fn){
             setTimeout(() => {
                 console.log("Caption added");
-                
+                fn()
             }, 3000);
         }
-        function step4(){
+        function step4(fn){
             setTimeout(() => {
                 console.log("Post uploaded");
-                
+                fn()
             }, 2000);
         }
+        step1(() => {
+            step2(() => {
+                step3(() => {
+                    step4()
+                })
+            })
+        })
     </script>
 </body>
 </html>
