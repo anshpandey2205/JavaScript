@@ -1,20 +1,35 @@
 
-let obj={
-    id:1,
-    firstName:"anshu",
-    LastName:"pandey",
-    FullName:function(city, age){
-        console.log(this.firstName+" "+this.LastName+" from "+city+" is "+age+" years old.");
+// let obj={
+//     id:1,
+//     firstName:"anshu",
+//     LastName:"pandey",
+//     FullName:function(city, age){
+//         console.log(this.firstName+" "+this.LastName+" from "+city+" is "+age+" years old.");
+//     }
+// }
+// obj.FullName("delhi", 25);
+
+// let userone={
+//     id:2,
+//     firstName:"Coachroach",
+//     LastName:"janta party",
+// }
+// obj.FullName.call(userone,"delhi",51);
+
+
+let user1={
+    name:"anshu",
+    age:22,
+    address:{
+        city:"delhi"
     }
 }
-obj.FullName("delhi", 25);
 
-let userone={
-    id:2,
-    firstName:"Coachroach",
-    LastName:"janta party",
-}
-obj.FullName.call(userone,"delhi",51);
+let user2=structuredClone(user1)
+user2.address.city="bhopal"
+console.log(user1.address.city);
+console.log(user2.address.city);
+
 
 
 
