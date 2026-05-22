@@ -17,19 +17,24 @@
 // obj.FullName.call(userone,"delhi",51);
 
 
-let user1={
-    name:"anshu",
-    age:22,
-    address:{
-        city:"delhi"
-    }
-}
+// let user1={
+//     name:"anshu",
+//     age:22,
+//     address:{
+//         city:"delhi"
+//     }
+// }
 
-let user2=structuredClone(user1)
-user2.address.city="bhopal"
-console.log(user1.address.city);
-console.log(user2.address.city);
+// let user2=structuredClone(user1)
+// user2.address.city="bhopal"
+// console.log(user1.address.city);
+// console.log(user2.address.city);
 
+
+// FIND PROPERTIES IN PRE DEFINED OBJECTS
+
+let arr=[1,2,3,4,5]
+console.log(Array.prototype);
 
 
 
