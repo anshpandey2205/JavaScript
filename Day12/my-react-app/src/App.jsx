@@ -6,6 +6,12 @@ const App = () => {
   )
 }
 
+const App2 = () => {
+  return (
+    <div>App2</div>
+  )
+}
+
 export default App
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
