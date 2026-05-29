@@ -28,13 +28,16 @@ import { useState, useEffect } from 'react'
 
 const App = () => {
   let[count, SetCount] = useState(0);
+  let [city, SetCity] = useState("Goa");
   useEffect(()=>{
     console.log("useEffect called");
-  },[])
+  },[city])
   return (
     <div>
       <h2>{count}</h2>
       <button onClick={()=>SetCount(count+1)}>Increment</button>
+      <button onClick={()=>SetCity("Delhi")}>Change City</button>
+      <h2>{city}</h2>
     </div>
   )
 }
