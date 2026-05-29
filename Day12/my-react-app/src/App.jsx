@@ -22,3 +22,21 @@
 // export default App
 
 
+import React from 'react'
+import { useState, useEffect } from 'react'
+//import Form from './Form'
+
+const App = () => {
+  let[count, SetCount] = useState(0);
+  useEffect(()=>{
+    console.log("useEffect called");
+  },[])
+  return (
+    <div>
+      <h2>{count}</h2>
+      <button onClick={()=>SetCount(count+1)}>Increment</button>
+    </div>
+  )
+}
+
+export default App
