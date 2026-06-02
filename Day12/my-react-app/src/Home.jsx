@@ -1,16 +1,12 @@
 import React from 'react'
 
 const Home = () => {
+    console.log("hellloooooooooo");
+    
   return (
-    <div>Home</div>
+    <div> homeee</div>
   )
 }
 
-const New = () => {
-  return (
-    <div>new</div>
-  )
-}
-export{New}
 export default Home
 

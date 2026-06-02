@@ -1,14 +1,21 @@
 import React from 'react'
-
-
-const App = () => {
+import './App.css'
+import { Link } from 'react-router-dom'
+const NavBar = () => {
   return (
-    <div id="" >
-      <li>Home</li>
-      <li>About</li>
-      <li>Task</li>
+    <div>
+        <div id='nav'>
+            <Link to={'/'}>   
+            <li>Home</li>
+            </Link>
+            <Link to={'/about'}> 
+            <li>About</li>
+            </Link>
+            <li>Task</li>
+
+        </div>
     </div>
   )
 }
 
-export default App
+export default NavBar
